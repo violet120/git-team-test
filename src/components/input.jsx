@@ -9,6 +9,10 @@ const StyledDiv = styled.div`
   &:hover {
     border-bottom: 1px solid blue;
   }
+
+  &: focus-within {
+    border-bottom: 1px solid green;
+  }
 `;
 
 const StyledLabel = styled.label`
@@ -39,3 +43,7 @@ function Input({ label, placeholder }) {
 }
 
 export default Input;
+
+// put in App.jsx
+// <Input label="帳號" placeholder="請輸入帳號" />
+// <Input label="密碼" placeholder="請輸入密碼" />
